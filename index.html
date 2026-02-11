@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Goldie 🌹</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&family=Sacramento&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Rose Decorations (SVG) -->
+    <div class="roses-container">
+        <div class="rose rose-tl">🌹</div>
+        <div class="rose rose-tr">🌹</div>
+        <div class="rose rose-bl">🌹</div>
+        <div class="rose rose-br">🌹</div>
+    </div>
+
+    <div class="container">
+        <!-- 1. Envelope Intro -->
+        <section id="envelope-section" class="screen active">
+            <div class="envelope-wrapper" id="envelope">
+                <div class="envelope">
+                    <div class="front flap"></div>
+                    <div class="front pocket"></div>
+                    <div class="letter">
+                        <div class="text">
+                            <p>For Goldie</p>
+                            <p>From me ❤️</p>
+                        </div>
+                    </div>
+                    <div class="hearts">
+                        <div class="heart a1"></div>
+                        <div class="heart a2"></div>
+                        <div class="heart a3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="action-text fade-in delay-2">Click the envelope to open 💌</div>
+        </section>
+
+        <!-- 2. Main Letter / Hero -->
+        <section id="hero" class="screen">
+            <div class="letter-content">
+                <h1>Dearest Goldie,</h1>
+                <p>I wanted to take a moment to tell you how much you mean to me.</p>
+                <p>You make every day brighter just by being you.</p>
+                <div class="divider">❦</div>
+                <button id="to-flowers-btn" class="clean-btn">I have a surprise for you...</button>
+            </div>
+        </section>
+
+        <!-- 3. Flowers Section -->
+        <section id="flowers" class="screen">
+            <h2>For you, beautiful...</h2>
+            <div class="flower-container" id="flower-bouquet">
+                <div class="flower-center">💐</div>
+                <!-- Flowers will be injected/animated here -->
+                <p class="instruction-text">Click to bloom!</p>
+            </div>
+            <button id="to-chocolates-btn" class="clean-btn hidden">One more treat...</button>
+        </section>
+
+        <!-- 4. Chocolates Section -->
+        <section id="chocolates" class="screen">
+            <h2>Sweets for my Sweet</h2>
+            <div class="chocolate-box" id="choco-box">
+                <div class="lid">
+                    <div class="heart-shape"></div>
+                </div>
+                <div class="box-base">
+                    <!-- Chocolates -->
+                    <div class="choco c1">🍫</div>
+                    <div class="choco c2">🍬</div>
+                    <div class="choco c3">🍫</div>
+                    <div class="choco c4">🍬</div>
+                    <div class="choco c5">❤️</div>
+                </div>
+            </div>
+            <p class="instruction-text box-text">Click to open!</p>
+            <button id="to-reasons-btn" class="clean-btn hidden">Why I love you...</button>
+        </section>
+
+        <!-- 5. 10 Things Section (Interactive Carousel) -->
+        <section id="ten-things" class="screen">
+            <h2>10 Things I Adore About You</h2>
+            <div class="card-container">
+                <div class="love-card" id="love-card">
+                    <p id="card-text">Your smile lights up my whole world ✨</p>
+                    <div class="card-number" id="card-counter">1 / 10</div>
+                </div>
+            </div>
+            <button id="next-reason-btn" class="clean-btn">Next Reason &gt;</button>
+            <button id="final-btn" class="clean-btn hidden">I have a question...</button>
+        </section>
+
+        <!-- 6. The Big Question -->
+        <section id="proposal" class="screen">
+            <div class="proposal-content">
+                <h2>Will you be my Valentine?</h2>
+                <div class="buttons">
+                    <button id="yes-btn" class="yes-btn">Yes, I'd love to 🌹</button>
+                    <button id="no-btn" class="no-btn">No... 🥀</button>
+                </div>
+                <div id="celebration" class="hidden">
+                    <h3>Thank you for being mine! ❤️</h3>
+                    <p>I love you so much!</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</body>
+
+</html>
